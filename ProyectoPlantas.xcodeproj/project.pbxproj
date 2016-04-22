@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C9D39AB81CCA74620017C170 /* ProyectoPlantas.c in Sources */ = {isa = PBXBuildFile; fileRef = C9D39AB71CCA74620017C170 /* ProyectoPlantas.c */; };
+		C9D39AC21CCA74E80017C170 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C9D39AC01CCA74E80017C170 /* main.c */; };
+		C9D39AC61CCA750E0017C170 /* ProyectoPlantasFuentes.c in Sources */ = {isa = PBXBuildFile; fileRef = C9D39AC41CCA750E0017C170 /* ProyectoPlantasFuentes.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9D39AB41CCA74620017C170 /* ProyectoPlantas.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoPlantas.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D39AB71CCA74620017C170 /* ProyectoPlantas.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ProyectoPlantas.c; sourceTree = "<group>"; };
 		C9D39AB91CCA74620017C170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D39ABF1CCA74D60017C170 /* ProyectoPlantas_H.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProyectoPlantas_H.h; sourceTree = "<group>"; };
+		C9D39AC01CCA74E80017C170 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C9D39AC41CCA750E0017C170 /* ProyectoPlantasFuentes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ProyectoPlantasFuentes.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +35,9 @@
 		C9D39AAA1CCA74620017C170 = {
 			isa = PBXGroup;
 			children = (
+				C9D39AC01CCA74E80017C170 /* main.c */,
+				C9D39AC41CCA750E0017C170 /* ProyectoPlantasFuentes.c */,
+				C9D39ABF1CCA74D60017C170 /* ProyectoPlantas_H.h */,
 				C9D39AB61CCA74620017C170 /* ProyectoPlantas */,
 				C9D39AB51CCA74620017C170 /* Products */,
 			);
@@ -94,11 +102,12 @@
 				TargetAttributes = {
 					C9D39AB31CCA74620017C170 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z65Z2B5469;
 					};
 				};
 			};
 			buildConfigurationList = C9D39AAE1CCA74620017C170 /* Build configuration list for PBXProject "ProyectoPlantas" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D39AC21CCA74E80017C170 /* main.c in Sources */,
+				C9D39AC61CCA750E0017C170 /* ProyectoPlantasFuentes.c in Sources */,
 				C9D39AB81CCA74620017C170 /* ProyectoPlantas.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +231,8 @@
 		C9D39ABD1CCA74620017C170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				INFOPLIST_FILE = ProyectoPlantas/Info.plist;
 				MODULE_NAME = Repaso.ProyectoPlantas;
 				MODULE_START = ProyectoPlantas_start;
@@ -228,6 +240,7 @@
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = Repaso.ProyectoPlantas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -235,7 +248,8 @@
 		C9D39ABE1CCA74620017C170 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				INFOPLIST_FILE = ProyectoPlantas/Info.plist;
 				MODULE_NAME = Repaso.ProyectoPlantas;
 				MODULE_START = ProyectoPlantas_start;
@@ -243,6 +257,7 @@
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = Repaso.ProyectoPlantas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
